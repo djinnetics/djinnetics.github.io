@@ -29,6 +29,17 @@ animatedElements.forEach(element => {
     observer.observe(element);
 });
 
+// Immediately reveal elements already in viewport on page load
+window.addEventListener('DOMContentLoaded', () => {
+    animatedElements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        // If visible in viewport
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            element.classList.add('visible');
+        }
+    });
+});
+
 // ===== SMOOTH SCROLL FOR NAVIGATION LINKS =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
