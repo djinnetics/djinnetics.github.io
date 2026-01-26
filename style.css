@@ -58,7 +58,7 @@ html {
 body {
     font-family: var(--font-family);
     color: var(--color-on-background);
-    background: var(--color-background);
+    background: linear-gradient(to bottom, #141313 0%, #1a1a1a 100%);
     line-height: 1.6;
     overflow-x: hidden;
     display: flex;
@@ -445,7 +445,7 @@ main {
 /* === FEATURES SECTION === */
 .features-section {
     padding: var(--spacing-xl) var(--spacing-md);
-    background: var(--color-background);
+    background: linear-gradient(to bottom, #141313 0%, #201F1F 50%, #141313 100%);
 }
 
 .feature-block {
