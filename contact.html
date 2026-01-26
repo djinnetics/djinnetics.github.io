@@ -9,60 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
           rel="stylesheet">
-    <style>
-        .contact-content {
-            max-width: 800px;
-            margin: var(--spacing-xl) auto;
-            padding: 0 var(--spacing-md);
-            text-align: center;
-            color: var(--color-on-background);
-        }
-        .contact-content h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: var(--spacing-md);
-            background: linear-gradient(90deg, var(--color-primary) 60%, var(--color-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .contact-info {
-            background: var(--color-surface-variant);
-            padding: var(--spacing-lg);
-            border-radius: 24px;
-            box-shadow: var(--shadow-lg);
-            margin-top: var(--spacing-md);
-        }
-        .contact-email {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--color-primary);
-            text-decoration: none;
-            display: inline-block;
-            margin-top: var(--spacing-sm);
-            transition: color var(--transition-fast);
-        }
-        .contact-email:hover {
-            color: var(--color-secondary);
-        }
-        .back-home {
-            display: inline-block;
-            margin-bottom: var(--spacing-md);
-            color: var(--color-on-primary-container);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color var(--transition-fast);
-        }
-        .back-home:hover {
-            color: var(--color-primary);
-        }
-        .contact-subtitle {
-            font-size: 1.2rem;
-            color: var(--color-on-primary-container);
-            margin-bottom: var(--spacing-md);
-            line-height: 1.6;
-        }
-    </style>
 </head>
 <body>
     <header class="nav-header scrolled">
@@ -80,14 +26,16 @@
         </nav>
     </header>
 
-    <main class="contact-content">
-        <a href="index.html" class="back-home">← Back to Home</a>
-        <h1>Get in Touch</h1>
-        <p class="contact-subtitle">Have questions or feedback about Djinnetics? We'd love to hear from you. Our team is dedicated to helping you reach your fitness goals with AI.</p>
-        
-        <div class="contact-info">
-            <p>Reach us directly via email:</p>
-            <a href="mailto:support@djinnetics.com" class="contact-email">support@djinnetics.com</a>
+    <main>
+        <div class="page-content contact-center">
+            <a href="index.html" class="back-home">← Back to Home</a>
+            <h1>Get in Touch</h1>
+            <p class="contact-subtitle">Have questions or feedback about Djinnetics? We'd love to hear from you. Our team is dedicated to helping you reach your fitness goals with AI.</p>
+            
+            <div class="contact-info">
+                <p>Reach us directly via email:</p>
+                <a href="mailto:support@djinnetics.com" class="contact-email">support@djinnetics.com</a>
+            </div>
         </div>
     </main>
 
