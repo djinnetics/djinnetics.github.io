@@ -303,7 +303,8 @@ main {
     height: auto;
     border-radius: 30px;
     overflow: hidden;
-    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1), var(--shadow-xl);
     background: var(--color-surface-variant);
     animation: floatPhone 6s ease-in-out infinite;
     transition: transform var(--transition-base);
