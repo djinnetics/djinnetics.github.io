@@ -46,7 +46,7 @@
                 <li><strong>Account Information:</strong> Name, email address, password, age, and subscription details.</li>
                 <li><strong>Physical Profile:</strong> Gender, height, weight, fitness level, workout preferences, equipment availability, and physical limitations or injuries you choose to disclose.</li>
                 <li><strong>Communications:</strong> Content of your messages when you contact support or interact with our social media channels.</li>
-                <li><strong>AI Coach Conversations:</strong> When you chat with the AI Coach (powered by Google Gemini), we process and store the text of your conversations to provide relevant fitness guidance.</li>
+                <li><strong>AI Coach Conversations:</strong> When you use the AI Coach feature (powered by Firebase AI and Google Gemini models), we process the text of your conversations along with relevant profile context to provide personalised fitness guidance. The profile data shared with the AI includes your name, age, weight, gender, fitness goals, fitness level, number of workout days per week, and your personalised workout plan. <strong>This data is transmitted to AI models only when you actively use the AI Coach feature.</strong> Conversation history is stored locally on your device only and is never uploaded to our servers or any third-party service. If you do not open or interact with the AI Coach, none of your data is sent to any AI model.</li>
             </ul>
 
             <h3>1.2 Data Collected Automatically</h3>
@@ -56,6 +56,17 @@
                 <li><strong>Log Data:</strong> Server logs including crash reports, system activity, and timestamp of access.</li>
                 <li><strong>Transaction Data:</strong> Purchase history and subscription status (processed securely by Google Play or RevenueCat; we do not store your full credit card details).</li>
             </ul>
+
+            <h3>1.3 AI Coach Data Processing</h3>
+            <p>The AI Coach is an optional in-app feature. It uses <strong>Firebase AI</strong> and <strong>Google Gemini models</strong> to generate personalised responses. When you send a message to the AI Coach, the following information is included in the request sent to the AI model:</p>
+            <ul>
+                <li>Your name, age, weight, gender</li>
+                <li>Your fitness goals and fitness level</li>
+                <li>Your number of workout days per week</li>
+                <li>Your personalised workout plan</li>
+                <li>The text of your conversation with the AI Coach</li>
+            </ul>
+            <p><strong>Important:</strong> This data is transmitted to the AI model <em>only when you actively use the AI Coach feature</em>. If you never open or interact with the AI Coach, none of the above information is sent to any external AI service. Conversation history is stored <strong>locally on your device only</strong> and is never uploaded to our servers or any third-party service.</p>
 
             <p><em><strong>Note:</strong> Unlike some other fitness apps, we <strong>do not</strong> collect body scan photos, use camera movement tracking, or integrate with Apple HealthKit/Google Health Connect at this time.</em></p>
 
@@ -101,13 +112,34 @@
             <p>We do not sell your personal data. We share data only with trusted third-party service providers ("Processors") who assist us in operating the App:</p>
             <ul>
                 <li><strong>Infrastructure & Database:</strong> Google Firebase (Firestore) – <em>USA/Global</em>. Stores user data and chat history.</li>
-                <li><strong>AI Intelligence:</strong> Google Cloud Vertex AI (Gemini models) – <em>Global</em>. Processes workout logic and chat interactions.</li>
+                <li><strong>AI Intelligence:</strong> Firebase AI (Google Gemini models) – <em>Global</em>. Processes AI Coach conversations. Data is transmitted to these services only when you actively use the AI Coach feature; no data is sent if the feature is not used.</li>
                 <li><strong>Analytics & Advertising:</strong> Google Firebase Analytics & Google Ads – <em>USA</em>. Helps us understand app usage and measure ad performance.</li>
                 <li><strong>Payments:</strong> Google Play (Google) & RevenueCat – <em>USA</em>. Handles subscriptions and in-app purchase validation.</li>
             </ul>
             <p>These providers process data strictly in accordance with our instructions and applicable privacy laws.</p>
 
-            <h2>4. Cookies and Tracking Technologies</h2>
+            <h2>4. Subscriptions and Billing</h2>
+            <p>Djinnetics offers paid subscription plans that unlock premium features. All subscription purchases, renewals, and payments are handled exclusively through the <strong>Google Play Store</strong> (Google LLC). We do not process credit or debit card details directly.</p>
+
+            <h3>4.1 Subscription Data We Collect</h3>
+            <ul>
+                <li>Subscription status (active, expired, cancelled, or in trial).</li>
+                <li>Subscription product ID and plan type (e.g., monthly, annual).</li>
+                <li>Purchase date and renewal/expiry date.</li>
+                <li>Whether a free trial has been redeemed on your account.</li>
+            </ul>
+
+            <h3>4.2 How Subscriptions Work</h3>
+            <ul>
+                <li><strong>Free Trial:</strong> Where offered, a free trial automatically converts to a paid subscription unless cancelled at least 24 hours before the trial period ends.</li>
+                <li><strong>Auto-Renewal:</strong> Subscriptions renew automatically at the end of each billing period and will be charged to your Google Play account. You will receive a reminder from Google before renewal.</li>
+                <li><strong>Cancellation:</strong> You can cancel at any time via <em>Google Play Store &gt; Subscriptions</em>. Cancelling stops future renewals; you retain access to premium features until the end of the current paid period. No partial refunds are issued for unused time.</li>
+                <li><strong>Refunds:</strong> Refund requests are governed by Google Play's refund policy. We do not process refunds directly — please contact Google Play support for billing disputes.</li>
+                <li><strong>Price Changes:</strong> If subscription prices change, we will notify you in advance through the App or by email. Continued use after the effective date constitutes acceptance of the new pricing.</li>
+            </ul>
+            <p>The legal basis for processing subscription data is <strong>Performance of Contract</strong>.</p>
+
+            <h2>5. Cookies and Tracking Technologies</h2>
             <p>We and our partners use cookies, Software Development Kits (SDKs), and similar technologies (e.g., Firebase SDK) to:</p>
             <ul>
                 <li>Authenticate your identity.</li>
@@ -116,10 +148,10 @@
             </ul>
             <p><strong>Advertising ID:</strong> You can reset your device’s Advertising ID or opt-out of personalized ads in your device settings (Settings > Privacy > Tracking/Ads).</p>
 
-            <h2>5. International Data Transfers</h2>
+            <h2>6. International Data Transfers</h2>
             <p>Our Services are hosted on Google Cloud Platform (Firebase), primarily in the United States and other global locations. If you access the App from the European Economic Area (EEA), UK, or Switzerland, your data may be transferred outside your jurisdiction. We rely on Google's Data Processing Addendum and Standard Contractual Clauses (SCCs) to ensure your data remains protected in compliance with GDPR.</p>
 
-            <h2>6. Data Retention</h2>
+            <h2>7. Data Retention</h2>
             <p>We retain your personal data only as long as necessary:</p>
             <ul>
                 <li><strong>Active Accounts:</strong> We keep your data while your account is active to provide the Services.</li>
@@ -127,7 +159,7 @@
                 <li><strong>Legal Obligations:</strong> We may retain transaction records (e.g., purchase history) for longer periods (up to 7 years) to comply with tax and accounting laws.</li>
             </ul>
 
-            <h2>7. Your Privacy Rights</h2>
+            <h2>8. Your Privacy Rights</h2>
             <p>Depending on your location (EU, UK, California, etc.), you have specific rights:</p>
             <ul>
                 <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
@@ -139,16 +171,16 @@
             </ul>
             <p>To exercise these rights, please contact us at <a href="mailto:whataking.development@gmail.com" class="contact-email">whataking.development@gmail.com</a>. We may verify your identity before fulfilling requests.</p>
 
-            <h2>8. Children's Privacy</h2>
+            <h2>9. Children's Privacy</h2>
             <p>Our Services are strictly intended for users <strong>18 years of age and older</strong>. We do not knowingly collect personal data from children. If we become aware that a child under 18 has provided us with personal data, we will take steps to delete such information and terminate the account immediately.</p>
 
-            <h2>9. Security</h2>
+            <h2>10. Security</h2>
             <p>We implement robust technical and organizational measures to protect your data, including encryption in transit (HTTPS/TLS) and at rest (encrypted database storage). However, no internet transmission is 100% secure, and we cannot guarantee absolute security.</p>
 
-            <h2>10. Changes to This Policy</h2>
+            <h2>11. Changes to This Policy</h2>
             <p>We may update this Privacy Policy from time to time. We will notify you of significant changes through the App or via email. The "Effective date" at the top of this page indicates when the latest changes took effect.</p>
 
-            <h2>11. Contact Us</h2>
+            <h2>12. Contact Us</h2>
             <p>If you have questions about this Privacy Policy or your data, please contact us:</p>
             
             <div class="contact-info" style="margin-top: 1rem; text-align: left;">
